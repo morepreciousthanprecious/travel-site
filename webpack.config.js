@@ -1,5 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
   entry: "./app/assets/scripts/App.js",
   output: {
     path: "./app/temp/scripts",
@@ -8,7 +7,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015']
         },
@@ -17,23 +16,4 @@ module.exports = {
       }
     ]
   }
-=======
-	entry: "./app/assets/scripts/App.js",
-	output: {
-		path: "./app/temp/scripts",
-		filename: "App.js"
-	},
-	module: {
-		loaders: [
-			{
-				loader: 'babel-loader',
-				query: {
-					presets: ['es2015']
-				},
-				test: /\.js$/,
-				exclude: /node_modules/
-			}
-		]
-	}
->>>>>>> header
 }
